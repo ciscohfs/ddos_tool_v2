@@ -24,6 +24,8 @@ while true; do
 4. retry script
 --------------
 99. cat README.md
+77. about me
+00. clear
 0. exit
 -> " tool
     
@@ -237,13 +239,22 @@ while true; do
         echo "Retrying script..."
         sleep 10
         continue
-    elif [ "$tool" == "99" ]; then
+        elif [ "$tool" == "99" ]; then
         cat README.md
         sleep 3
         echo ""
         echo "----------------------------------------------------"
         echo ""
         continue
+        elif [ "$tool" == "77" ]; then
+        cat about_me.txt
+        sleep 3
+        echo ""
+        echo "----------------------------------------------------"
+        echo ""
+        continue
+        elif [ "$tool" == "00" ]; then
+        clear
     else
         echo "Invalid choice. Please choose a valid tool."
         break
