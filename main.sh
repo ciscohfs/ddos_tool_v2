@@ -1,10 +1,21 @@
 #!/bin/bash
-echo "welcome to my tool"
-sleep 2
-echo "now"
+echo "."
+sleep 0.2
+echo "."
+sleep 0.2
+echo "."
+sleep 0.2
+echo "."
+echo ""
+echo "██████╗ ██████╗  ██████╗ ███████╗████████╗ ██████╗  ██████╗ ██╗     "
+echo "██╔══██╗██╔══██╗██╔═══██╗██╔════╝╚══██╔══╝██╔═══██╗██╔═══██╗██║     "
+echo "██║  ██║██║  ██║██║   ██║███████╗   ██║   ██║   ██║██║   ██║██║     "
+echo "██║  ██║██║  ██║██║   ██║╚════██║   ██║   ██║   ██║██║   ██║██║     "
+echo "██████╔╝██████╔╝╚██████╔╝███████║   ██║   ╚██████╔╝╚██████╔╝███████╗"
+echo "╚═════╝ ╚═════╝  ╚═════╝ ╚══════╝   ╚═╝    ╚═════╝  ╚═════╝ ╚══════╝"
 sleep 1
-echo "go to see list"
-sleep 0.5
+echo ""
+echo ""
 while true; do
     read -p "
 1. DDOS
@@ -12,6 +23,7 @@ while true; do
 3. ReconTool
 4. retry script
 --------------
+99. cat README.md
 0. exit
 -> " tool
     
@@ -224,6 +236,13 @@ while true; do
         clear
         echo "Retrying script..."
         sleep 10
+        continue
+    elif [ "$tool" == "99" ]; then
+        cat README.md
+        sleep 3
+        echo ""
+        echo "----------------------------------------------------"
+        echo ""
         continue
     else
         echo "Invalid choice. Please choose a valid tool."
